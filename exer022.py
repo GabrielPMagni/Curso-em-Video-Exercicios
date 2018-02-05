@@ -1,0 +1,6 @@
+nome = input('\033[1;4;30mDiga um nome completo:\033[m ').strip()
+print('Em maiúsculas: \033[31m{}\033[m'.format(nome.upper()))
+print('Em minúsculas: \033[31m{}\033[m'.format(nome.lower()))
+print('Número de letras: (sem espaços) \033[31m{}\033[m'.format(len(nome) - nome.count(' ')))
+sep = nome.split()
+print('A primeira palavra tem \033[31m{}\033[m letras.'.format(len(sep[0])))
